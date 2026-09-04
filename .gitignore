@@ -1,0 +1,30 @@
+.env
+.env.local
+.env*.local
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+.vercel
+npm-debug.log*
+
+# 후보 2 전환 대비
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# 로그·임시
+*.log
+.cache/
