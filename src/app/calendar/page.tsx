@@ -4,3 +4,7 @@
 // 참고: 이 폴더에 파일을 추가하면 됩니다. src/lib/mock의 데이터를 가져다 쓰세요(D-2 완료 후).
 
 // 컴포넌트를 분리하고 싶으면 src/components/calendar/ 폴더를 만들어 그 안에 두세요.
+
+export default function CalendarPage() {
+  return <main>캘린더 화면 시작점 (Y-2부터 여기서 작업)</main>;
+}
