@@ -1,11 +1,12 @@
 # 일정 데이터 스키마
 
+
 ## 필드
 
 | 필드 | 타입 | 설명 | 예시 |
 | --- | --- | --- | --- |
 | id | string | 일정 고유 식별자 | "seed-1", "google-abc123" |
-| title | string | 화면에 표시될 이름 | "토익 LC Part 2 기출 20문항" |
+| title | string | 화면에 표시될 이름 | "출근길 토익 LC 기출" |
 | start | string | 시작 일시 (ISO 8601) | "2026-08-12T20:00:00+09:00" |
 | end | string | 종료 일시 (ISO 8601) | "2026-08-12T20:45:00+09:00" |
 | source | "seed" \| "google" | 데이터 출처 (화면에서 구분 표시용) | "google" |
@@ -16,6 +17,7 @@
 - 필드는 `id`, `title`, `start`, `end`, `source`, `slotType` 6개를 사용한다.
 - `start`와 `end`는 ISO 8601 문자열을 사용한다.
 - `slotType`은 `micro` 또는 `focus`를 사용하며, 외부 일정은 `null`이다.
+
 
 ## 샘플 데이터
 
