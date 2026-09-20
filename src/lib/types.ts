@@ -1,1 +1,11 @@
-// 일정 스키마 타입 — 합의 직후 D-3에서 채운다
+export type EventSource = "seed" | "google";
+export type SlotType = "micro" | "focus" | null;
+
+export interface CalendarEvent {
+  id: string;
+  title: string;
+  start: string;
+  end: string;
+  source: EventSource;
+  slotType: SlotType;
+}
