@@ -37,6 +37,15 @@ function toRbcEvent(event: CalendarEvent): RbcEvent {
   };
 }
 
+function eventPropGetter(event: RbcEvent) {
+  const { slotType } = event.resource;
+
+  if (slotType === "focus") return { className: styles.eventFocus };
+  if (slotType === "micro") return { className: styles.eventMicro };
+
+  return {};
+}
+
 type CalendarViewProps = {
   initialEvents: CalendarEvent[];
 };
@@ -58,6 +67,7 @@ export default function CalendarView({ initialEvents }: CalendarViewProps) {
         startAccessor="start"
         endAccessor="end"
         culture="ko"
+        eventPropGetter={eventPropGetter}
         style={{ height: "calc(100vh - 120px)" }}
 />
     </div>
