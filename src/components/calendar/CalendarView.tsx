@@ -38,11 +38,12 @@ function toRbcEvent(event: CalendarEvent): RbcEvent {
 }
 
 function eventPropGetter(event: RbcEvent) {
-  const { slotType } = event.resource;
+  const { source, slotType } = event.resource;
 
+  if (source === "google") return { className: styles.eventGoogle };
   if (slotType === "focus") return { className: styles.eventFocus };
   if (slotType === "micro") return { className: styles.eventMicro };
-
+  
   return {};
 }
 
