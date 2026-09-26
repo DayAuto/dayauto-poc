@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 24px;
+}
+
+.eventFocus {
+  background-color: #2563eb !important;
+  border-color: #1d4ed8 !important;
+  color: #ffffff !important;
+}
+
+.eventMicro {
+  background-color: #059669 !important;
+  border-color: #047857 !important;
+  color: #ffffff !important;
+}
+
+.eventGoogle {
+  background-color: #9ca3af !important;
+  border-color: #6b7280 !important;
+  color: #1f2937 !important;
+}

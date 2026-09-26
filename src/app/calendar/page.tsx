@@ -5,6 +5,16 @@
 
 // 컴포넌트를 분리하고 싶으면 src/components/calendar/ 폴더를 만들어 그 안에 두세요.
 
+import CalendarView from "../../components/calendar/CalendarView";
+import { getMockEvents } from "@/lib/mock/events";
+
 export default function CalendarPage() {
-  return <main>캘린더 화면 시작점 (Y-2부터 여기서 작업)</main>;
+  const events = getMockEvents();
+
+  return (
+    <main>
+      <h1>주간 학습 일정</h1>
+      <CalendarView initialEvents={events} />
+    </main>
+  );
 }
