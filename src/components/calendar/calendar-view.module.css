@@ -1,5 +1,33 @@
 .wrapper {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resetButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #111827;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resetButton:hover {
+  background-color: #f3f4f6;
+}
+
+.eventGoogle {
+  background-color: #9ca3af !important;
+  border-color: #6b7280 !important;
+  color: #1f2937 !important;
 }
 
 .eventFocus {
@@ -14,8 +42,42 @@
   color: #ffffff !important;
 }
 
-.eventGoogle {
-  background-color: #9ca3af !important;
-  border-color: #6b7280 !important;
-  color: #1f2937 !important;
+.eventDone {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendDotFocus,
+.legendDotMicro,
+.legendDotGoogle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legendDotFocus {
+  background-color: #2563eb;
+}
+
+.legendDotMicro {
+  background-color: #059669;
+}
+
+.legendDotGoogle {
+  background-color: #9ca3af;
 }
